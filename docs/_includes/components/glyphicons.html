@@ -18,8 +18,8 @@
   <h2 id="glyphicons-how-to-use">How to use</h2>
   <p>For performance reasons, all icons require a base class and individual icon class. To use, place the following code just about anywhere. Be sure to leave a space between the icon and text for proper padding.</p>
   <div class="bs-callout bs-callout-danger">
-    <h4>Don't mix with other components</h4>
-    <p>Icon classes cannot be directly combined with other components. They should not be used along with other classes on the same element. Instead, add a nested <code>&lt;span&gt;</code> and apply the icon classes to the <code>&lt;span&gt;</code>.</p>
+    <h4>Always use only dedicated empty <code>&lt;span&gt;</code>s</h4>
+    <p>Icon classes should only be used on dedicated <code>&lt;span&gt;</code>s that contain no text content or child elements. The <code>&lt;span&gt;</code> should also not have any other classes applied to it.</p>
   </div>
 {% highlight html %}
 <span class="glyphicon glyphicon-search"></span>
